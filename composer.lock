@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53b5d56b3b7e3cbac1713e68c8850f6c",
+    "content-hash": "822934bc993e97b72d9c8ee7f93d7f8b",
     "packages": [
         {
             "name": "brick/math",
@@ -5863,6 +5863,77 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.4.0"
             },
             "time": "2025-12-02T11:56:42+00:00"
+        },
+        {
+            "name": "vironeer/toastr",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vironeer/toastr.git",
+                "reference": "32bb4b5ec9c924b776d8afdf5162b5d1676b01c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vironeer/toastr/zipball/32bb4b5ec9c924b776d8afdf5162b5d1676b01c0",
+                "reference": "32bb4b5ec9c924b776d8afdf5162b5d1676b01c0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/session": ">=8.0",
+                "illuminate/support": ">=8.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Toastr": "Vironeer\\Toastr\\Facades\\Toastr"
+                    },
+                    "providers": [
+                        "Vironeer\\Toastr\\ToastrServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers.php"
+                ],
+                "psr-4": {
+                    "Vironeer\\Toastr\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vironeer",
+                    "email": "support@vironeer.com"
+                }
+            ],
+            "description": "A Laravel package for displaying toast notifications.",
+            "keywords": [
+                "alerts",
+                "flash messages",
+                "frontend",
+                "laravel",
+                "messages",
+                "notification",
+                "pop-up",
+                "toast",
+                "toastr",
+                "user interface",
+                "vironeer"
+            ],
+            "support": {
+                "issues": "https://github.com/vironeer/toastr/issues",
+                "source": "https://github.com/vironeer/toastr/tree/v1.0.2"
+            },
+            "time": "2024-12-03T22:26:30+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

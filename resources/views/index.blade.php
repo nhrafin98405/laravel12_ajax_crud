@@ -46,6 +46,11 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-12">
+            
+
+
+            <div class="message"></div>
+            
                 <div class="container mt-3">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h2>Student Table</h2>
@@ -56,26 +61,7 @@
 
                     </div>
 
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Address</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($students as $student)
-                                <tr>
-                                    <td>{{ $student->id }}</td>
-                                    <td>{{ $student->name }}</td>
-                                    <td>{{ $student->email }}</td>
-                                    <td>{{ $student->address }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                        @include('table')
                 </div>
 
             </div>
@@ -116,6 +102,8 @@
                     contentType: false,
                     success:function(response){
                         $('#myModal').modal('hide');
+                        // $('#studententry').reset();    form old data nile eita use kora jabe  
+                        $('.message').html('<div class="alert alert-success message ">inserted</div>');
 
                     },
                     error:function(err){
@@ -132,6 +120,11 @@
 
             })
         });
+
+
+        // fetch students without page reloade 
+
+        $.ajax
     </script>
 </body>
 

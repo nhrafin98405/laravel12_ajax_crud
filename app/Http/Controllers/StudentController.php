@@ -31,6 +31,11 @@ class StudentController extends Controller
 
         $student->save();
 
-        return redirect('/student');
+        // return redirect('/student')->with('success','successfully inseart');
+
+        return response()->json([
+            'status' => 'success',
+            'mgs' => 'student create successfully'
+        ]);
     }
 }
